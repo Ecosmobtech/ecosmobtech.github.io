@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ecosmob Technologies | VoIP &amp; Telecom Software Development Company</title>
+<meta name="description" content="Ecosmob Technologies is an end-to-end software services and solutions provider specialising in VoIP, unified communications, telecom software development, web, mobile and cloud engineering.">
+<meta name="author" content="Ecosmob Technologies">
+<link rel="canonical" href="https://ecosmobtech.github.io/">
+<meta property="og:title" content="Ecosmob Technologies | VoIP &amp; Telecom Software Development">
+<meta property="og:description" content="End-to-end VoIP, telecom and enterprise software engineering services.">
+<meta property="og:url" content="https://www.ecosmob.com/">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --brand:#00b6d4;
+  --brand-2:#6c4ef6;
+  --ink:#0d1b2a;
+  --muted:#5a6b7b;
+  --bg:#f6f9fc;
+  --white:#ffffff;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid #e5edf3;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.4px;font-size:1.15rem;color:var(--ink)}
+.logo:hover{text-decoration:none}
+.dot{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.nav ul a{color:var(--muted);font-size:.94rem;font-weight:600}
+.nav ul a:hover{color:var(--brand-2);text-decoration:none}
+.btn{
+  display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;border:0;
+}
+.btn:hover{opacity:.92;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--brand-2);border:2px solid var(--brand-2);padding:10px 20px}
+
+/* hero */
+.hero{
+  background:linear-gradient(140deg,#071c33 0%,#0f2f52 55%,#1c1450 100%);
+  color:#fff;padding:86px 0 96px;text-align:center;
+}
+.hero h1{font-size:2.5rem;line-height:1.2;margin:0 0 18px;letter-spacing:-1px}
+.hero .tag{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#7fe3f5;border:1px solid rgba(127,227,245,.4);padding:6px 14px;border-radius:999px;margin-bottom:22px}
+.hero p{font-size:1.1rem;color:#c9d8e6;max-width:720px;margin:0 auto 30px}
+.hero .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero .btn.ghost{color:#fff;border-color:rgba(255,255,255,.55)}
+
+/* sections */
+section{padding:72px 0}
+h2{font-size:1.85rem;margin:0 0 12px;letter-spacing:-.6px}
+.lead{color:var(--muted);max-width:760px;margin:0 0 34px}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{
+  background:var(--white);border:1px solid #e7eef4;border-radius:var(--radius);
+  padding:26px 24px;transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(13,27,42,.09)}
+.card h3{margin:0 0 8px;font-size:1.08rem}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+.ico{
+  width:44px;height:44px;border-radius:12px;margin-bottom:14px;
+  background:linear-gradient(135deg,rgba(0,182,212,.15),rgba(108,78,246,.15));
+  display:flex;align-items:center;justify-content:center;font-size:1.3rem;
+}
+.alt{background:var(--white);border-top:1px solid #e9f0f5;border-bottom:1px solid #e9f0f5}
+
+ul.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+ul.checks li{padding-left:30px;position:relative;color:var(--muted)}
+ul.checks li:before{content:"\2713";position:absolute;left:0;top:0;color:var(--brand);font-weight:800}
+ul.checks strong{color:var(--ink)}
+
+.cta-band{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;text-align:center}
+.cta-band h2{color:#fff}
+.cta-band p{color:rgba(255,255,255,.9);max-width:640px;margin:0 auto 26px}
+.cta-band .btn{background:#fff;color:var(--brand-2)}
+
+footer{background:#071c33;color:#9fb3c8;padding:40px 0;font-size:.92rem}
+.foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer a{color:#7fe3f5}
+
+@media (max-width:760px){
+  .nav ul{display:none}
+  .hero h1{font-size:1.95rem}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="dot"></span> Ecosmob Technologies</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#opensource">Open Source</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="https://www.ecosmob.com/" target="_blank" rel="noopener">ecosmob.com</a>
+  </div>
+</header>
+
+<div id="top" class="hero">
+  <div class="wrap">
+    <span class="tag">VoIP &middot; Telecom &middot; Enterprise Software</span>
+    <h1>Engineering communication technology<br>that scales with your business</h1>
+    <p>Ecosmob Technologies is an end-to-end software services and solutions provider, focused on client-centric, user-friendly products across VoIP, unified communications, web, mobile and cloud.</p>
+    <div class="cta">
+      <a class="btn" href="https://www.ecosmob.com/" target="_blank" rel="noopener">Visit our website</a>
+      <a class="btn ghost" href="#services">Explore services</a>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="center">
+  <div class="wrap">
+    <h2>Who we are</h2>
+    <p class="lead">We build and maintain communication and business software for operators, ITSPs, startups and enterprises. Our teams work as an extension of yours &mdash; from discovery and architecture through development, QA, deployment and long-term maintenance.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">&#9881;</div>
+        <h3>Product engineering</h3>
+        <p>Custom platforms designed around your workflows instead of forcing your business into off-the-shelf limits.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#128225;</div>
+        <h3>Telecom specialists</h3>
+        <p>Deep, hands-on experience with open-source VoIP stacks, signalling, media handling and carrier integrations.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#129309;</div>
+        <h3>Dedicated teams</h3>
+        <p>Flexible engagement models, transparent communication and delivery practices built for long-running projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">A broad services portfolio centred on real-time communication and the software that surrounds it.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">&#9742;</div>
+        <h3>VoIP software development</h3>
+        <p>Softswitch, billing, routing and provisioning solutions built on FreeSWITCH, Asterisk, Kamailio and OpenSIPS.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#127760;</div>
+        <h3>WebRTC solutions</h3>
+        <p>Browser and app based voice, video and messaging experiences with low-latency real-time media.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#128222;</div>
+        <h3>IP PBX &amp; contact centre</h3>
+        <p>Multi-tenant PBX, IVR, predictive dialling, call recording and agent tooling for modern support teams.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#128241;</div>
+        <h3>Mobile &amp; web apps</h3>
+        <p>Cross-platform mobile apps, SIP softphones, portals and dashboards with clean, usable interfaces.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#9729;</div>
+        <h3>Cloud &amp; DevOps</h3>
+        <p>Containerised deployments, CI/CD pipelines, monitoring and scaling for communication workloads.</p>
+      </div>
+      <div class="card">
+        <div class="ico">&#129302;</div>
+        <h3>AI, IoT &amp; automation</h3>
+        <p>Speech, analytics and automation layers that make communication data useful for the business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <h2>Technology we work with</h2>
+    <p class="lead">Our engineers pair open-source communication platforms with a modern application stack.</p>
+    <ul class="checks">
+      <li><strong>Communication platforms</strong> &mdash; FreeSWITCH, Asterisk, Kamailio, OpenSIPS, WebRTC</li>
+      <li><strong>Protocols</strong> &mdash; SIP, RTP, SRTP, WebSocket, SMPP, REST APIs</li>
+      <li><strong>Backend</strong> &mdash; PHP, Python, Node.js, Go, Java, C/C++</li>
+      <li><strong>Frontend</strong> &mdash; JavaScript, React, Angular, Vue</li>
+      <li><strong>Mobile</strong> &mdash; Android, iOS, Flutter, React Native</li>
+      <li><strong>Data &amp; infrastructure</strong> &mdash; MySQL, PostgreSQL, MongoDB, Redis, Docker, Kubernetes, AWS</li>
+    </ul>
+  </div>
+</section>
+
+<section id="opensource" class="alt center">
+  <div class="wrap">
+    <h2>Open source &amp; GitHub</h2>
+    <p class="lead">This GitHub Pages site is published from the <a href="https://github.com/Ecosmobtech/ecosmobtech.github.io" target="_blank" rel="noopener">ecosmobtech.github.io</a> repository. Our public repositories and code samples live on the Ecosmob GitHub profile &mdash; follow along for tooling, integrations and experiments from our engineering team.</p>
+    <a class="btn" href="https://github.com/Ecosmobtech" target="_blank" rel="noopener">View GitHub profile</a>
+  </div>
+</section>
+
+<section id="contact" class="cta-band">
+  <div class="wrap">
+    <h2>Let's talk about your project</h2>
+    <p>Tell us what you are building and our team will get back to you with an approach, timeline and the right engagement model.</p>
+    <a class="btn" href="https://www.ecosmob.com/" target="_blank" rel="noopener">Get in touch via ecosmob.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>&copy; <span id="yr">2026</span> Ecosmob Technologies. All rights reserved.</div>
+    <div><a href="https://www.ecosmob.com/" target="_blank" rel="noopener">www.ecosmob.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Ecosmobtech" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
